@@ -1,0 +1,22 @@
+<html >
+<body>
+<div class="a" id="a">
+<img src="love.jpg" id="image"><br><br>
+<h1 id="text1">Love Birds</h1>
+<h1 id="text2">Blue Rose</h1>
+</div>
+<script>
+document.getElementById("a").addEventListener("mouseover",ab);
+document.getElementById("a").addEventListener("mouseout",bc);
+function ab() {
+document.getElementById('image').src = "rose.jpg";
+document.getElementById('text1').style.display="none";
+document.getElementById('text2').style.display="block"
+}
+function bc() {
+document.getElementById('image').src = "love.jpg";
+document.getElementById('text1').style.display="block";
+document.getElementById('text2').style.display="none";
+}
+</script>
+</body></html>
